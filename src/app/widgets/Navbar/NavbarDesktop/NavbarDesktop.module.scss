@@ -1,0 +1,13 @@
+.navbarDesktop {
+	&__list {
+		@apply flex justify-between items-center;
+
+		& li {
+			@apply hidden lg:block text-black z-10;
+		}
+	}
+
+	&__btn {
+		@apply px-10 py-3 bg-white rounded-full text-blue_color;
+	}
+}

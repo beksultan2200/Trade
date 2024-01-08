@@ -1,0 +1,26 @@
+.navbarMobile {
+	@apply flex justify-between items-center;
+	transition: all 0.6s ease;
+	&__list {
+		@apply absolute bg-white top-0 left-0 h-screen w-screen flex flex-col items-center justify-center transform translate-y-[-850px];
+		transition: all 0.6s ease;
+
+		&__open {
+			transition: all 0.6s ease;
+			@apply absolute bg-white top-0 left-0 h-screen w-screen flex flex-col items-center justify-center transform translate-y-[0x];
+
+			& li {
+				@apply mb-10;
+				& a {
+					@apply text-2xl text-black md:text-3xl;
+				}
+			}
+		}
+	}
+	&__btn {
+		@apply px-10 py-3 bg-blue_color rounded-full text-white;
+	}
+	&__social {
+		@apply flex justify-center items-center gap-5 mb-10;
+	}
+}

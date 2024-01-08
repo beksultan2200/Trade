@@ -1,0 +1,35 @@
+.container {
+	@apply max-w-7xl my-0 mx-auto py-0 px-[10px];
+}
+
+.navbar {
+	@apply fixed w-full top-0 left-0 z-50 transition-colors duration-300 bg-blue_color;
+
+	& ul {
+		& li {
+			@apply text-white;
+		}
+	}
+
+	&__blue {
+		@apply fixed w-full top-0 left-0 z-50 transition-colors duration-300 bg-blue_color;
+		& ul {
+			& li {
+				@apply text-white;
+			}
+		}
+	}
+
+	&__white {
+		@apply fixed w-full top-0 left-0 z-50 transition-colors duration-300 bg-white;
+		& ul {
+			& li {
+				@apply text-blue_color;
+			}
+		}
+	}
+
+	&__body {
+		@apply flex items-center relative z-10 h-[80px];
+	}
+}

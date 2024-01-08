@@ -1,0 +1,62 @@
+.signIn {
+	@apply bg-white h-full;
+
+	&__container {
+		@apply p-0 flex items-center justify-center max-w-7xl h-screen my-0 mx-auto lg:py-0 lg:px-[60px] sm:p-5;
+	}
+
+	&__form {
+		@apply p-[25px] bg-white rounded-[30px] lg:p-[50px] h-fit w-[540px] sm:p-5;
+
+		& h2 {
+			@apply text-[26px] font-semibold mb-[40px] sm:mb-5;
+		}
+
+		& form {
+			@apply flex flex-col mb-[40px];
+
+			& input {
+				@apply rounded-xl h-11 mb-5 p-5 w-full;
+				border: 2px solid #2e37a41a;
+			}
+
+			& button {
+				@apply rounded-xl text-lg py-3 px-4 text-white;
+				background: linear-gradient(92.39deg, #4e57cd 1.86%, #2e37a4);
+
+				transition: all 0.3s ease;
+
+				& :hover {
+					background: linear-gradient(92.39deg, #424ccf 1.86%, #1f2781);
+				}
+			}
+		}
+	}
+
+	&__action {
+		@apply flex items-center justify-between flex-wrap gap-3 mb-10;
+		& p {
+			@apply text-blue_color text-[18px] font-medium;
+		}
+	}
+
+	&__check {
+		margin: 0 !important;
+		height: auto !important;
+		width: fit-content !important;
+		margin-right: 20px !important;
+		cursor: pointer;
+	}
+}
+
+.social {
+	@apply flex justify-between items-center flex-wrap gap-5;
+
+	&__account {
+		@apply text-gray text-[14px] font-medium mb-0 text-left;
+
+		& span {
+			@apply text-blue_color;
+		}
+	}
+}

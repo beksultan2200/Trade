@@ -1,0 +1,16 @@
+.benefits {
+	@apply mb-[70px] bg-blue_color;
+	&__container {
+		@apply p-7 container my-0 mx-auto relative;
+
+		& h4 {
+			@apply py-0 mb-[49px] text-white text-center text-[40px] font-bold;
+		}
+	}
+	&__list {
+		@apply mb-[70px] grid grid-cols-1 md:grid-cols-2 gap-[68px] justify-items-center;
+		&__item {
+			@apply p-5 text-center flex-col lg:flex-row flex items-center  bg-white lg:p-[60px] w-fit text-[24px] gap-[30px] rounded-[20px] shadow-shadowL z-10;
+		}
+	}
+}

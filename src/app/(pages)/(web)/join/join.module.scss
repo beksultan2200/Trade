@@ -1,0 +1,105 @@
+.hero {
+	@apply flex flex-col-reverse md:flex-row items-center mt-[95px];
+
+	&__container {
+		@apply md:pl-[100px] md:pr-3 container my-0 mx-auto py-[50px];
+	}
+	&__content {
+    @apply flex md:block flex-col items-center text-center md:text-left;
+		& h1 {
+      font-size: clamp(50px, 4vw, 64px);
+			@apply text-black max-w-2xl 
+			mb-7 font-bold tracking-tight leading-none;
+		}
+		& p {
+      font-size: clamp(24px, 2.78vw, 40px);
+			@apply max-w-[622px] font-normal mb-[86px] text-black;
+			line-height: 1.2;
+		}
+		& a {
+			@apply px-8 py-5 bg-blue_color text-white text-[26px];
+		}
+	}
+  &__right{
+    @apply h-full w-full flex justify-end;
+    & img{
+      @apply h-full;
+    }
+  }
+}
+
+.join{
+  @apply bg-blue_color flex justify-center;
+  &__container{
+    @apply pt-[54px] pb-[42px] flex flex-col items-center text-center gap-[32px] max-w-[1050px] ;
+    & h2{
+      font-size: clamp(24px, 4vw, 36px);
+      @apply font-bold text-white;
+    }
+    & p:nth-child(2){
+      font-size: clamp(16px, 4vw, 24px);
+      @apply font-normal leading-normal text-white;
+    }
+    & p:nth-child(3){
+      font-size: clamp(18px, 4vw, 26px);
+      @apply font-normal leading-normal text-white;
+    }
+  }
+}
+
+.info{
+  @apply md:flex;
+  &__container{
+    @apply w-[90%] md:w-full mx-auto  md:pl-[75px] md:pr-[62px] py-[27px];
+    & h3{
+      font-size: clamp(30px, 4vw, 40px);
+      @apply pl-[14px] text-black font-extrabold max-w-[500px] mb-[22px];
+    }
+    >div{
+      @apply flex flex-col gap-[42px];
+      & div{
+        @apply flex flex-col gap-[10px];
+        & h4{
+          font-size: clamp(20px, 4vw, 32px);
+          @apply font-medium;
+        }
+        & p{
+          font-size: clamp(10px, 3vw, 20px);
+        }
+      }
+    }
+  }
+  & img{
+    @apply w-[100%] md:w-[70%];
+  }
+}
+
+.quote{
+  @apply py-[81px] flex items-center justify-center relative max-w-[90%] mx-auto text-center md:text-left;
+  & h1{
+    font-size: clamp(30px, 4vw, 60px);
+    @apply max-w-[1128px] font-extrabold leading-normal;
+  }
+  & p{
+    font-size: clamp(16px, 4vw, 24px);
+    @apply absolute right-[126px] bottom-[32px];
+  }
+}
+
+.ready{
+  @apply pt-[74px] pb-[148px];
+  & h1{
+    font-size: clamp(28px, 4vw, 48px);
+    @apply font-extrabold text-center mb-[74px];
+  }
+  &__container{
+    @apply grid grid-cols-1 md:grid-cols-2 justify-center items-center w-[90%] mx-auto flex-wrap gap-[120px];
+  }
+  &__card{
+    @apply flex items-end h-[819px] bg-[#F6F6F6] px-[65px] py-[53px] shadow-shadowL;
+    & a{
+      font-size: clamp(16px, 4vw, 32px);
+      @apply w-full text-center py-[21px] bg-blue_color text-white font-normal;
+    }
+  }
+}

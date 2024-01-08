@@ -1,0 +1,54 @@
+.hero{
+  @apply mt-[95px];
+  &__container{
+    @apply max-w-[1440px] w-[94%] mx-auto;
+  }
+  &__heading{
+    @apply flex flex-col gap-y-[23px] text-center mt-[23px] mb-[67px];
+    & h1{
+      font-size: clamp(32px, 4vw, 64px);
+      @apply font-extrabold;
+    }
+    & h3{
+      font-size: clamp(18px, 4vw, 32px);
+      @apply font-medium;
+    }
+    & p{
+      font-size: clamp(12px, 4vw, 24px);
+      @apply font-medium;
+    }
+  }
+  &__content{
+    @apply grid grid-cols-1 md:grid-cols-3 gap-[46px];
+    & div{
+      @apply w-full flex flex-col items-center justify-center bg-[#F6F6F6] py-[35px] px-[24px];
+      & h4{
+        font-size: clamp(18px, 4vw, 32px);
+        @apply font-medium mb-[28px];
+      }
+      & p{
+        font-size: clamp(10px, 4vw, 20px);
+        @apply font-medium mb-[67px];
+      }
+      & a{
+        font-size: clamp(5px, 4vw, 10px);
+        @apply py-[10px] px-[50px] bg-blue_color text-white rounded-[5px];
+      }
+    }
+  }
+}
+
+.ready{
+  @apply mt-[67px] bg-bg-mentors bg-no-repeat bg-cover w-full;
+  &__container{
+    @apply max-w-[1440px] w-[85%] mx-auto flex flex-col justify-between items-center text-center py-[65px] gap-[42px];
+    & h1{
+      font-size: clamp(30px, 4vw, 60px);
+      @apply  font-extrabold text-white;
+    }
+    & a{
+      font-size: clamp(12px, 4vw, 24px);
+      @apply bg-blue_color rounded-[5px] py-[10px] px-[38px] text-white font-medium;
+    }
+  }
+}

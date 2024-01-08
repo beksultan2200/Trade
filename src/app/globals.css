@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-slide > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.slick-dots li.slick-active button:before {
+	color: #062856 !important;
+}
+
+.slick-next {
+	right: 20px !important;
+}
+
+.slick-prev {
+	left: 20px !important;
+}
+
+.slick-next:before {
+	content: '→';
+	color: black !important;
+}
+
+.slick-prev:before {
+	content: '←';
+	color: black !important;
+}

@@ -1,0 +1,30 @@
+.feedback {
+	@apply my-20;
+	&__container {
+		@apply mt-20;
+	}
+
+	&__btn {
+		@apply w-[70%] ml-[15%] md:w-[40%] md:ml-[30%] rounded-md bg-blue_color text-white text-xl py-4 px-12 block text-center lg:w-[30%] mt-20 lg:ml-[35%];
+	}
+
+	&__card {
+		@apply bg-white  text-black rounded-xl mb-5;
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		width: 70% !important;
+
+		&__info {
+			@apply flex flex-col items-center justify-center gap-4 p-4;
+
+			& h5 {
+				@apply text-xl font-semibold;
+			}
+
+			& p {
+				@apply text-left;
+			}
+		}
+	}
+}

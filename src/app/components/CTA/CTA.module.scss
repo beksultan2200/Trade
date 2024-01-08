@@ -1,0 +1,38 @@
+.cta {
+	@apply text-center mb-[70px];
+	&__container {
+		@apply p-5;
+	}
+	&__content {
+		@apply flex flex-col items-center;
+		& h2 {
+			@apply text-3xl text-black lg:text-[36px] font-bold mb-8;
+		}
+		& p {
+			@apply text-lg max-w-full lg:text-xl lg:max-w-[72%] text-black mb-9;
+		}
+
+		& a {
+			@apply text-xl px-[50px] text-white rounded-[30px] lg:text-2xl bg-blue_color lg:px-[73px] py-5;
+		}
+	}
+	&__features {
+		@apply w-full gap-[37px] flex flex-wrap justify-center items-center mb-[70px];
+
+		&__item {
+			@apply bg-blue_color max-w-[355px] flex flex-col justify-center items-center rounded-xl p-[30px];
+
+			& img {
+				@apply mb-5;
+			}
+
+			& h3 {
+				@apply text-[24px] mb-5 text-white lg:text-[36px] font-bold;
+			}
+
+			& p {
+				@apply text-[16px] mb-5 text-white lg:text-[24px];
+			}
+		}
+	}
+}

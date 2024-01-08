@@ -1,0 +1,35 @@
+.results {
+	@apply my-[30px] pt-[100px];
+
+	&__container {
+		@apply container mx-auto p-7;
+	}
+
+	&__title {
+		@apply font-extrabold text-[48px] text-center mb-[30px];
+	}
+
+	&__heading {
+		@apply flex items-center gap-x-10 w-[87%] mx-auto sm:flex-col lg:flex-row;
+
+		&__text {
+			@apply text-[48px] font-extrabold sm:text-[32px] sm:text-center md:text-left xl:text-[48px];
+		}
+	}
+
+	&__citata {
+		@apply bg-blue_color text-center text-white;
+
+		&__container {
+			@apply container mx-auto my-10 p-8 flex flex-col gap-y-3;
+		}
+
+		&__text {
+			@apply text-[64px] font-extrabold sm:text-[32px] md:text-[44px] lg:text-[64px];
+		}
+
+		&__author {
+			@apply flex text-[36px] font-medium justify-end sm:text-[16px] md:text-[24px] lg:text-[36px];
+		}
+	}
+}

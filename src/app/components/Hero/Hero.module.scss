@@ -1,0 +1,20 @@
+.hero {
+	@apply bg-bg-hero bg-cover bg-center h-screen flex items-center mb-[70px];
+
+	&__container {
+		@apply p-5 container my-0 mx-auto md:pt-[160px];
+	}
+	&__content {
+		& h1 {
+			@apply text-white max-w-2xl text-[50px] lg:text-[64px] 
+			mb-7 font-bold tracking-tight leading-none;
+		}
+		& p {
+			@apply max-w-[622px] text-[24px] md:text-3xl lg:text-[40px] font-normal mb-14 text-white;
+			line-height: 1.2;
+		}
+		& a {
+			@apply px-10 py-3 bg-white rounded-full text-black;
+		}
+	}
+}

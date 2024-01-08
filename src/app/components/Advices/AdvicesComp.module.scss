@@ -1,0 +1,25 @@
+.advices {
+	@apply pt-[100px];
+	&__content {
+		@apply bg-blue_color text-white;
+
+		& h2 {
+			@apply text-3xl text-center lg:text-5xl font-bold mb-10 pt-[50px];
+		}
+	}
+
+	&__list {
+		@apply flex justify-center items-center flex-wrap;
+	}
+
+	&__items {
+		@apply max-w-[568px] border border-white p-5 m-5;
+	}
+
+	&__items__title {
+		@apply text-2xl lg:text-3xl font-bold mb-3;
+	}
+	&__items__desc {
+		@apply text-xl lg:text-2xl font-medium mb-3;
+	}
+}
